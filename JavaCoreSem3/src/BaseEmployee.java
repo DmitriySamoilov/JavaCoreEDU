@@ -36,7 +36,7 @@ abstract class BaseEmployee implements Comparable<BaseEmployee> {
     //region Поля
     protected static int counter;
     protected int id;
-    public String name;
+    protected String name;
     //endregion
 
 
