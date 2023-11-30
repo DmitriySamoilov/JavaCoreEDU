@@ -31,8 +31,8 @@ public class Main {
         // вывода данных с использованием foreach (подсказка: вам потребуется поработать с интерфейсом Iterable).
 
         StaffSheet sheet = new StaffSheet();
-        sheet.add(new Freelancer(750));
-        sheet.add(new Worker(56000));
+        sheet.add(new Freelancer("Вася",750));
+        sheet.add(new Worker("Коля",56000));
         for (BaseEmployee e: sheet){
             System.out.println(e);
         }
