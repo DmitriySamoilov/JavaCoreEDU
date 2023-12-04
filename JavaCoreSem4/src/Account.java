@@ -4,8 +4,6 @@ import java.util.List;
 
 abstract class Account {
     //region Методы
-
-    //endregion
     protected void addTransaction (String key, Transaction transaction){
         this.transactionsList.get(key).add(transaction);
     }
@@ -39,7 +37,7 @@ abstract class Account {
     public String toString() {
         return accountType + " ID" + accountId + " " + currency +" Current amount: " + getCurrentAmount();
     }
-
+    //endregion
     //region Конструкторы
     Account(String  accountType){
         this("RUB", accountType);
